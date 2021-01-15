@@ -7,7 +7,11 @@ body{
 :root{
     --primary-white:#fff;
     --primary-orange:#f9ab00;
+    --primary-red:#ef4035;
 
+}
+nav{
+    z-index: 2;
 }
 
 /*............MenuLinks...*/
@@ -32,4 +36,68 @@ nav ul li{
 .navbar-nav>li>a:hover{
     border-top: 0.1875rem solid var(--primary-orange);
 
+}
+/**************Header**********************/
+
+.header-wraper{
+    position: relative;
+    background: url(2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.main-info{
+display: flex;
+position: absolute;
+top: 200px;
+left: 0;
+right: 0;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+z-index: 1;
+}
+/*******TypedTExt**********/
+.typed-text{
+margin-top: 10px;
+font-size: 2rem;
+color: #fff;
+}
+.btn-main-offer{
+    border: 1px solid var(--primary-red);
+    text-transform: uppercase bold;
+    border-radius: 0%;
+    margin-top: 200px;
+    padding: 0.625rem 0.75rem;
+    color:var(--primary-white);
+    margin: 2rem;
+}
+.btn-main-offer:hover{
+    text-decoration: none;
+    background-color:var(--primary-red);
+    color: var(--primary-white);
+    transition: .2s ease-in-out;
+}
+
+/**********PARTICALS********/
+.tsparticles-canvas-el{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    
+}
+
+@media(max-width:768px){
+    .particles-canvas{
+        display: none;
+    }
+    .main-info h1{
+        font-size: 1.5rem !important;
+    }
+    .typed-text{
+        font-size: 1.3rem;
+    }
 }

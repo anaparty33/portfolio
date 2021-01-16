@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 body{
-    font-family: "Roboto Condensed" sans-serif;
+    font-family: "Roboto Condensed" sans-serif !important;
 }
 
 :root{
@@ -99,5 +99,31 @@ color: #fff;
     }
     .typed-text{
         font-size: 1.3rem;
+    }
+}
+
+/******About Me**********/
+.photo-wrap{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+    
+}
+.profile-img{
+    border: 2px solid var(--primary-orange);
+    padding: 0.3rem;
+    border-radius: 50%;
+    width: 16rem;
+    height: 16rem;
+}
+.about-heading{
+color: #fcca03;
+text-transform: uppercase;
+}
+@media(max-width:468px){
+    .profile-img{
+        width: 10rem;
+        height: 10rem;
+        
     }
 }

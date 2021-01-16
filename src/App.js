@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Particles from "react-particles-js";
+import Aboutme from "./components/Aboutme";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       />
       <Navbar />
       <Header />
+      <Aboutme />
     </>
   );
 };
